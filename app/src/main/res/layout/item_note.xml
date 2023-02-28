@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+     <ImageView
+         android:layout_width="100dp"
+         android:layout_margin="12dp"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         android:background="@mipmap/ic_image"
+         android:id="@+id/ic_image"
+         android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="164dp"
+        android:text="Title"
+        app:layout_constraintLeft_toRightOf="@+id/ic_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="12dp"
+        android:gravity="top"
+        android:id="@+id/item_title"
+        android:layout_height="22dp"/>
+
+    <TextView
+        android:layout_width="184dp"
+        android:text="Description of the note this can be any content"
+        android:layout_margin="12dp"
+        android:id="@+id/item_desc"
+        app:layout_constraintTop_toBottomOf="@+id/item_title"
+        app:layout_constraintStart_toEndOf="@+id/ic_image"
+        android:layout_height="38dp"/>
+    
+    <TextView
+        android:layout_width="115dp"
+        android:id="@+id/txt_data"
+        app:layout_constraintTop_toBottomOf="@+id/item_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"
+        android:text="12/12/2023 12:20"
+        android:layout_height="36dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@drawable/ic_vector2"
+        app:layout_constraintLeft_toRightOf="@id/item_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="12dp"
+        android:id="@+id/ic_vector2"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@drawable/item_create"
+        app:layout_constraintLeft_toRightOf="@+id/ic_vector2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        android:id="@+id/ic_vector3"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:background="@drawable/item_delete"
+        app:layout_constraintLeft_toRightOf="@id/ic_vector3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"
+        android:id="@+id/item_delete"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
